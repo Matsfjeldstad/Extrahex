@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Button from '@/components/Button';
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <span className=" bg-clip-text bg-gradient-to-r text-transparent from-[#00A3FF] to-[#0E6697]">Trustless</span>{' '}
         Yield.
       </h1>
-      <h2 className="text-gray-300 text-lg">Coming Soon</h2>
+      <Button mobile={true} buttonText="Learn More" />
     </main>
   );
 }
