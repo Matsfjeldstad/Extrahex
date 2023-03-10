@@ -36,7 +36,7 @@ export default function Loader({ setLoading }) {
         </div>
       </motion.div>
       <motion.q variants={item} className="text-gray-600 text-2xl">
-        Not your key, not your coins
+        Not your keys, not your coins
       </motion.q>
     </motion.div>
   );
