@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Button from './Button';
 
@@ -23,12 +23,20 @@ export default function Navbar() {
   };
 
   return (
-    <div
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: -80,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
       className={`fixed top-0 left-0 h-20 w-screen ${
         menuOpen ? 'text-gray-200 sm:text-gray-900' : 'text-gray-900'
       } font-argentum text-xl z-40 p-4 flex justify-between items-center`}
     >
-      <div id="logo" className="relative font-light flex gap-1 items-center z-40">
+      <motion.div layoutId="logo" id="logo" className="relative font-light flex gap-1 items-center z-40">
         <svg
           width="37"
           height="32"
@@ -41,7 +49,7 @@ export default function Navbar() {
         <div>
           EXTRA<span className="font-black italic">HEX</span>
         </div>
-      </div>
+      </motion.div>
       <div className="sm:hidden">
         <button onClick={() => setMenuOpen(!menuOpen)} className=" duration-200 relative h-7 z-30 border-red-300">
           {menuOpen ? (
@@ -58,7 +66,7 @@ export default function Navbar() {
             </>
           )}
         </button>
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           {menuOpen && (
             <motion.div
               initial={{ width: 0 }}
@@ -102,12 +110,20 @@ export default function Navbar() {
         </AnimatePresence>
       </div>
       <nav className="hidden gap-4 text-base sm:flex">
-        <Link href={'/'}>Home</Link>
-        <Link href={'/'}>What is Hex</Link>
-        <Link href={'/'}>Buy Hex</Link>
-        <Link href={'/'}>FAQ</Link>
+        <Link href={'/'} className="duration-200 hover:scale-105">
+          Home
+        </Link>
+        <Link href={'/'} className="duration-200 hover:scale-105">
+          What is Hex
+        </Link>
+        <Link href={'/'} className="duration-200 hover:scale-105">
+          Buy Hex
+        </Link>
+        <Link href={'/'} className="duration-200 hover:scale-105">
+          FAQ
+        </Link>
       </nav>
       <Button buttonText="Learn More" />
-    </div>
+    </motion.div>
   );
 }
