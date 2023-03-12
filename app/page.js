@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const item = {
   initial: { y: 100, opacity: 0 },
-  animate: { y: 0, opacity: 1, transition: { staggerChildren: 0.3 } },
+  animate: { y: 0, opacity: 1, transition: { duration: 0.8, staggerChildren: 0.5, ease: [0.075, 0.82, 0.165, 1] } },
 };
 
 export default function Home() {
