@@ -15,7 +15,7 @@ export default function Loader({ setLoading }) {
       initial="initial"
       exit="exit"
       onAnimationComplete={() => setLoading(false)}
-      className="flex flex-col gap-4 justify-center items-center"
+      className="flex flex-col gap-4 justify-center items-center h-screen w-screen"
     >
       <motion.div
         variants={item}

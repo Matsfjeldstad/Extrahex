@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Button from './Button';
+import LinkButton from './LinkButton';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,7 +35,7 @@ export default function Navbar() {
       }}
       className={`fixed top-0 left-0 h-20 w-screen ${
         menuOpen ? 'text-gray-200 sm:text-gray-900' : 'text-gray-900'
-      } font-argentum text-xl z-40 p-4 flex justify-between items-center`}
+      } font-argentum text-xl z-40 p-6 flex justify-between items-center`}
     >
       <motion.div layoutId="logo" id="logo" className="relative font-light flex gap-1 items-center z-40">
         <svg
@@ -123,7 +124,7 @@ export default function Navbar() {
           FAQ
         </Link>
       </nav>
-      <Button buttonText="Learn More" />
+      <LinkButton buttonText="Learn More" />
     </motion.div>
   );
 }
