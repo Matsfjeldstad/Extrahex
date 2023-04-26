@@ -1,6 +1,6 @@
 import Web3 from 'web3';
 
-const infuraURL = `https://mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_PROJECT_ID}`;
+const infuraURL = `https://mainnet.infura.io/v3/26fe5ae885a04c149fb71fba1ae8b87e`;
 const pulsechain = 'https://rpc.v2b.testnet.pulsechain.com';
 
 const getWeb3 = () => {

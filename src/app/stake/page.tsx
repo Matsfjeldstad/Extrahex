@@ -17,8 +17,8 @@ const Page = () => {
   const [hexPrice, setHexPrice] = useState(0);
 
   const hexContract = getHexContract();
-
   useEffect(() => {
+    const hexContract = getHexContract();
     const fetchHexPrice = async () => {
       const hexPrice = await getHexUsdPrice();
       console.log(hexPrice);
@@ -27,7 +27,7 @@ const Page = () => {
 
     const fetchTotalSupply = async () => {
       const totalSupplyHex = await hexContract.methods.totalSupply().call();
-      setTotalSupply(parseInt(totalSupplyHex));
+      setTotalSupply(totalSupplyHex);
       // console.log(dailyData);
     };
     const fetchCurrentDay = async () => {
@@ -41,7 +41,7 @@ const Page = () => {
     fetchCurrentDay();
   }, []);
 
-  async function getStakeYield(stakerAddress, stakeIndex) {
+  async function getStakeYield(stakerAddress: string, stakeIndex) {
     // Fetch stake data
     const stakeData = await hexContract.methods.stakeLists(stakerAddress, stakeIndex).call();
 

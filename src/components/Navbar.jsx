@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Button from './Button';
 import LinkButton from './LinkButton';
+import ConnectToWalletButton from './ConnectToWalletButton';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -124,7 +125,10 @@ export default function Navbar() {
           FAQ
         </Link>
       </nav>
-      <LinkButton buttonText="Learn More" />
+      {/* <LinkButton buttonText="Learn More" /> */}
+      <div className="max-w-[300px] text-sm flex justify-end">
+        <ConnectToWalletButton />
+      </div>
     </motion.div>
   );
 }
