@@ -1,0 +1,42 @@
+[
+  {
+    "project": "Pirex",
+    "description": "",
+    "project_scope": "Safe Apps",
+    "primary_category": "DeFi",
+    "secondary_categories": "Yield",
+    "logo": "/logos/pirex-logo-p-3d-square-alpha.png",
+    "value_prop": "",
+    "project_website": "https://pirex.io/",
+    "github_dev_docs": "https://github.com/redacted-cartel",
+    "team_contact": "https://discord.gg/redactedcartel",
+    "twitter": "https://twitter.com/redactedcartel",
+    "primary_integration": "Safe Apps SDK",
+    "packages": "safe-apps-wagmi",
+    "modules_guards": "",
+    "safe_apps_smart": "No",
+    "networks": "Arbitrum, Ethereum",
+    "interface_can_you_create_a_safe": "",
+    "interface_can_you_import_an_existing_safe": ""
+  },
+  {
+    "project": "Pirex",
+    "description": "",
+    "project_scope": "Safe Apps",
+    "primary_category": "DeFi",
+    "secondary_categories": "Yield",
+    "logo": "/logos/pirex-logo-p-3d-square-alpha.png",
+    "value_prop": "",
+    "project_website": "https://pirex.io/",
+    "github_dev_docs": "https://github.com/redacted-cartel",
+    "team_contact": "https://discord.gg/redactedcartel",
+    "twitter": "https://twitter.com/redactedcartel",
+    "primary_integration": "Safe Apps SDK",
+    "packages": "safe-apps-wagmi",
+    "modules_guards": "",
+    "safe_apps_smart": "No",
+    "networks": "Arbitrum, Ethereum",
+    "interface_can_you_create_a_safe": "",
+    "interface_can_you_import_an_existing_safe": ""
+  }
+]

@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className='h-28 bg-white/[0.001] px-6 py-4 text-white backdrop-blur-sm'>
+    <header className='h-28 bg-white/[0.001] relative px-6 py-4 z-50 text-white backdrop-blur-sm'>
       <div className='mx-auto flex max-w-7xl items-center justify-between'>
         <Link href={''}>
           <ExtraHexLogo className='h-12 fill-white' />
