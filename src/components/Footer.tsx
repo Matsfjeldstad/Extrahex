@@ -38,7 +38,7 @@ export default function Footer({}: Props) {
         </div>
       </div>
       <div className='mt-6 border-t border-gray-700 pt-4 text-center'>
-        <p className='text-sm'>© 2023 Mats Fjeldstad. All rights reserved.</p>
+        <p className='text-sm text-gray-700'>© 2023 Mats Fjeldstad. All rights reserved.</p>
       </div>
     </footer>
   );
