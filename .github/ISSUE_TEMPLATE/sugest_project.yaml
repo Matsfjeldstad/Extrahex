@@ -1,0 +1,150 @@
+name: Suggest a project
+description: Suggest a new project to list on extrahex.com
+title: Suggest a project
+labels: ["project :game_die:"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+       Only continue with the issue if the project meets the criteria listed.
+  - type: markdown
+    id: project_info
+    attributes:
+      value: "## Project info"
+  - type: input
+    id: project_name
+    attributes:
+      label: Project
+      description: Please provide the official name of the project.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Please provide a brief description of the project.
+        Maximum 100 characters.
+    validations:
+      required: true
+  # - type: dropdown
+  #   id: project_scope
+  #   attributes:
+  #     label: Please provide the project scope.
+  #     options:
+  #       - "Safe Apps"
+  #       - "Interface"
+  #       - "Module"
+  #       - "Guard"
+  #       - "Connection provider"
+  #       - "Core SDK Integration"
+  #       - "Network"
+  #   validations:
+  #     required: true
+  - type: dropdown
+    id: primary_category
+    attributes:
+      label: Select a primary category of your project.
+      options:
+        - "DeFi"
+        - "DAO Tooling"
+        - "Payments"
+        - "Collectibles / NFT"
+        - "Infrastructure"
+    validations:
+      required: true
+  - type: dropdown
+    id: secondary_categories
+    attributes:
+      label: Select secondary categories of your project.
+      description: Please select up to 3 categories.
+      multiple: true
+      options:
+        - "Collectibles"
+        - "Marketplace"
+        - "Governance"
+        - "DEX"
+        - "CEX"
+        - "DeFi"
+        - "Dashboard"
+        - "DAO Tooling"
+        - "Fundraising"
+        - "Lending / Borrowing"
+        - "CeFi"
+        - "Institutional"
+        - "Stablecoin"
+        - "Insurance"
+        - "Accounting"
+        - "Payments"
+        - "Tooling"
+        - "Bridge"
+        - "Infrastructure"
+        - "Aggregator"
+        - "Staking"
+        - "Donation"
+        - "Yield"
+        - "Automation"
+        - "Derivatives"
+        - "Wallet"
+        - "Mining"
+        - "Mobile App"
+        - "Messaging"
+        - "Gaming"
+        - "Privacy"
+    validations:
+      required: true
+  - type: textarea
+    id: project_logo
+    attributes:
+      label: Project logo
+      description: |
+        Please provide an SVG or a transparent PNG. Minimum 100 x 100 Pixel. We recommend 500 x 500 Pixel.
+        Tip: You can attach images by clicking this area to highlight it and then dragging files in.
+    validations:
+      required: true
+  - type: textarea
+    id: value_prop
+    attributes:
+      label: Value proposition
+      description: Please provide a brief description of the project's value proposition.
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact
+      description: Please provide contact information for the project.
+    validations:
+      required: false
+  - type: input
+    id: project_website
+    attributes:
+      label: Project URL
+      description: Please provide the URL of the project's website.
+    validations:
+      required: false
+  - type: input
+    id: github_dev_docs
+    attributes:
+      label: Github / Dev Docs
+      description: Please provide the URL of the project's Github / Documentation for developers.
+    validations:
+      required: false
+  - type: input
+    id: twitter
+    attributes:
+      label: Twitter
+      description: Please provide the project's Twitter handle.
+    validations:
+      required: false
+  - type: dropdown
+    id: networks
+    attributes:
+      label: Networks
+      description: Please provide a list of supported networks.
+      multiple: true
+      options:
+        - "Pulsechain"
+        - "Ethereum"
+    validations:
+      required: false
