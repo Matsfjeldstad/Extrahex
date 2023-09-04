@@ -1,12 +1,12 @@
 name: Suggest a project
-description: Suggest a new project to list on safe.global
+description: Suggest a new project to list on extrahex.com
 title: Suggest a project
 labels: ["project :game_die:"]
 body:
   - type: markdown
     attributes:
       value: |
-        Before suggesting a project, make sure you've read [our listing policy](https://github.com/safe-global/safe-ecosystem-database#adding-projects). Only continue with the issue if the wallet meets the criteria listed there.
+       Only continue with the issue if the project meets the criteria listed.
   - type: markdown
     id: project_info
     attributes:
@@ -27,20 +27,20 @@ body:
         Maximum 100 characters.
     validations:
       required: true
-  - type: dropdown
-    id: project_scope
-    attributes:
-      label: Please provide the project scope.
-      options:
-        - "Safe Apps"
-        - "Interface"
-        - "Module"
-        - "Guard"
-        - "Connection provider"
-        - "Core SDK Integration"
-        - "Network"
-    validations:
-      required: true
+  # - type: dropdown
+  #   id: project_scope
+  #   attributes:
+  #     label: Please provide the project scope.
+  #     options:
+  #       - "Safe Apps"
+  #       - "Interface"
+  #       - "Module"
+  #       - "Guard"
+  #       - "Connection provider"
+  #       - "Core SDK Integration"
+  #       - "Network"
+  #   validations:
+  #     required: true
   - type: dropdown
     id: primary_category
     attributes:
@@ -64,9 +64,9 @@ body:
         - "Marketplace"
         - "Governance"
         - "DEX"
+        - "CEX"
         - "DeFi"
         - "Dashboard"
-        - "SAFE"
         - "DAO Tooling"
         - "Fundraising"
         - "Lending / Borrowing"
@@ -86,6 +86,7 @@ body:
         - "Automation"
         - "Derivatives"
         - "Wallet"
+        - "Mining"
         - "Mobile App"
         - "Messaging"
         - "Gaming"
@@ -137,87 +138,13 @@ body:
     validations:
       required: false
   - type: dropdown
-    id: primary_integration
-    attributes:
-      label: Primary integration
-      description: Please provide the primary integration of the project.
-      multiple: true
-      options:
-        - "Safe Apps SDK"
-        - "Core SDK"
-        - "Transaction Service API"
-        - "Unsure"
-        - "Safe Contracts"
-    validations:
-      required: false
-  - type: dropdown
-    id: packages
-    attributes:
-      label: Packages
-      description: Please provide a list of the packages used by the project
-      multiple: true
-      options:
-        - "Safe Core SDK"
-        - "Safe Service Client"
-        - "Transaction Service API"
-        - "Unsure"
-        - "Safe Deployments"
-        - "Safe Ethers Lib"
-        - "Safe Ethers Adapter"
-        - "web3-onboard"
-        - "web3-react"
-        - "safe-apps-wagmi"
-        - "safe-apps-web3modal"
-    validations:
-      required: false
-  - type: textarea
-    id: modules_guards
-    attributes:
-      label: Modules / Guards
-      description: Please provide a list of modules / guards (if any) you are using in your project.
-    validations:
-      required: false
-  - type: textarea
-    id: safe_apps_smart
-    attributes:
-      label: Smart Accounts
-      description: How are you leveraging the benefits of Smart Accounts?
-    validations:
-      required: false
-  - type: dropdown
     id: networks
     attributes:
       label: Networks
       description: Please provide a list of supported networks.
       multiple: true
       options:
-        - "Base"
+        - "Pulsechain"
         - "Ethereum"
-        - "BNB"
-        - "Gnosis Chain"
-        - "Polygon"
-        - "Optimism"
-        - "Avalanche"
-        - "Arbitrum"
-        - "Aurora"
-        - "Celo"
-    validations:
-      required: false
-  - type: dropdown
-    id: interface_can_you_create_a_safe
-    attributes:
-      label: Can you create a Safe via the interface?
-      options:
-        - "Yes"
-        - "No"
-    validations:
-      required: false
-  - type: dropdown
-    id: interface_can_you_import_an_existing_safe
-    attributes:
-      label: Can you import an existing Safe via the interface?
-      options:
-        - "Yes"
-        - "No"
     validations:
       required: false
