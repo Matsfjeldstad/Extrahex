@@ -40,10 +40,10 @@ export default function HeroSection({}: Props) {
           <h1 className='text-[64px] font-bold leading-tight [text-wrap:balance]'>
             Explore the Hex Ecosystem
           </h1>
-          <p className='text-2xl text-gray-400'>
+          <p className='text-lg text-gray-400'>
             Many projects are buildt around Hex, opening more doors to use Hex
           </p>
-          <button className=' flex w-full max-w-sm justify-between rounded-md border-2 px-4 border-gray-400 bg-transparent py-6 text-2xl hover:border-blue-300'>
+          <button className=' flex w-full max-w-sm justify-between rounded-md border-2 px-4 border-gray-400 bg-transparent py-6 text-lg hover:border-blue-300'>
             Submit your project <span>{'->'}</span>
           </button>
         </div>

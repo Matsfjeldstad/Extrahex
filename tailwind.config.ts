@@ -29,10 +29,19 @@ const config: Config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        'border-rotate': {
+          from: {
+            transform: 'rotate(0)',
+          },
+          to: {
+            transform: 'rotate(1turn)',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'border-rotate': 'border-rotate 8s linear infinite'
       },
     },
   },
