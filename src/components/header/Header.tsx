@@ -37,9 +37,9 @@ export default function Header({}: Props) {
           </Link>
           <div className='hidden w-fit items-center gap-4 lg:flex '>
             <NavLinks links={links} />
-            <Button className='flex h-12 w-[200px] flex-col items-center justify-center rounded-lg bg-[linear-gradient(95deg,_#00d4a1_11%,#0061d4_151%)]'>
+            {/* <Button className='flex h-12 w-[200px] flex-col items-center justify-center rounded-lg bg-[linear-gradient(95deg,_#00d4a1_11%,#0061d4_151%)]'>
               <div className="text-center font-['Argentum_Sans'] text-white">Launch Dapp</div>
-            </Button>
+            </Button> */}
           </div>
           <Hamburger />
         </div>

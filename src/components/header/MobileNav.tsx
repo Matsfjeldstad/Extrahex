@@ -44,7 +44,7 @@ export default function MobileNav({}: Props) {
               className='fixed left-0 top-0 z-50 w-full overflow-hidden bg-gray-950 p-6'
             >
               <RemoveScroll>
-                <nav className='mx-auto mt-24 flex max-w-7xl flex-col gap-8 text-5xl font-black uppercase'>
+                <nav className='mx-auto mt-24 flex max-w-7xl flex-col gap-8 text-3xl font-black uppercase sm:text-5xl'>
                   {links.map((link) => {
                     return (
                       <Link

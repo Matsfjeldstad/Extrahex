@@ -16,6 +16,9 @@ const config: Config = {
       },
     },
     extend: {
+      screens: {
+        xs: '480px',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
@@ -41,7 +44,7 @@ const config: Config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'border-rotate': 'border-rotate 8s linear infinite'
+        'border-rotate': 'border-rotate 8s linear infinite',
       },
     },
   },
