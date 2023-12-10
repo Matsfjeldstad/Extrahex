@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { Button } from '../ui/button';
 import { ExtraHexLogo } from '@/assets/photos/logos/Logos';
@@ -5,6 +6,8 @@ import Link from 'next/link';
 import Hamburger from '../ui/hamburger';
 import MobileNav from './MobileNav';
 import NavLinks from './NavLinks';
+import { useBgStore } from '@/store/store';
+import { cn } from '@/lib/utils';
 
 type Props = {};
 
@@ -28,12 +31,13 @@ const links = [
 ];
 
 export default function Header({}: Props) {
+  const bgColorState = useBgStore((state) => state.bgClass);
   return (
     <>
       <header className='sticky top-0 z-[100] h-20 w-full bg-black/[0.1] px-6 py-4 text-white backdrop-blur-xl'>
         <div className='mx-auto flex max-w-7xl items-center justify-between'>
           <Link href={''} className='relative z-10'>
-            <ExtraHexLogo className='h-12 fill-white' />
+            <ExtraHexLogo className={cn("h-12",bgColorState === 'bg-gray-950' ? 'fill-white' : 'fill-gray-950')} />
           </Link>
           <div className='hidden w-fit items-center gap-4 lg:flex '>
             <NavLinks links={links} />
