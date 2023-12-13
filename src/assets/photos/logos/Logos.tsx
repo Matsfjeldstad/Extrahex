@@ -8,8 +8,6 @@ type Props = {
 export function ExtraHexLogo({ className }: Props) {
   return (
     <svg
-      width='211'
-      height='64'
       viewBox='0 0 211 64'
       className={cn('h-10 w-fit', className)}
       xmlns='http://www.w3.org/2000/svg'
