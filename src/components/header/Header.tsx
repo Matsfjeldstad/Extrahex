@@ -21,10 +21,6 @@ const links = [
     href: '/what-is-hex',
   },
   {
-    title: 'Buy Hex',
-    href: '/buy-hex',
-  },
-  {
     title: 'Ecosystem',
     href: '/ecosystem',
   },
