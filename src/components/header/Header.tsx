@@ -32,8 +32,8 @@ export default function Header({}: Props) {
     <>
       <header className='sticky top-0 z-[100] h-20 w-full bg-black/[0.1] px-6 py-4 text-white backdrop-blur-xl'>
         <div className='mx-auto flex max-w-7xl items-center justify-between'>
-          <Link href={''} className='relative z-10'>
-            <ExtraHexLogo className={cn("h-12",bgColorState === 'bg-gray-950' ? 'fill-white' : 'fill-gray-950')} />
+          <Link href={'/'} className='relative z-10'>
+            <ExtraHexLogo className={cn("h-12 w-fit",bgColorState === 'bg-gray-950' ? 'fill-white' : 'fill-gray-950')} />
           </Link>
           <div className='hidden w-fit items-center gap-4 lg:flex '>
             <NavLinks links={links} />
