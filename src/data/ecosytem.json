@@ -1,0 +1,62 @@
+[
+  {
+    "project": "Deci",
+    "description": "Deci is a smart contract for trustless pooling of a 10 year long HEX stake.",
+    "primary_category": "DeFi",
+    "secondary_categories": ["Pool", "PRC20"],
+    "logo": "/logos/deci.png",
+    "value_prop": "",
+    "project_website": "https://www.maximusdao.com/",
+    "github": "https://github.com/dipcatcher/maximus",
+    "twitter": "https://twitter.com/maximus_dao",
+    "networks": ["Ethereum", "Pulsechain"]
+  },
+  {
+    "project": "Maximus",
+    "description": "Maximus is a smart contract for trustless pooling of a max length HEX stake.",
+    "primary_category": "DeFi",
+    "secondary_categories": ["Pool", "PRC20"],
+    "logo": "/logos/MAXI.svg",
+    "value_prop": "",
+    "project_website": "https://www.maximusdao.com/",
+    "github": "https://github.com/dipcatcher/maximus",
+    "twitter": "https://twitter.com/maximus_dao",
+    "networks": ["Ethereum", "Pulsechain"]
+  },
+  {
+    "project": "Hedron",
+    "description": "Enabling stakers to mint and borrow HDRN against their active stakes and trade HEX stakes as NFTs. ",
+    "primary_category": "DeFi",
+    "secondary_categories": ["NTF", "Tokenized Stake", "PRC20"],
+    "logo": "/logos/Hedron.svg",
+    "value_prop": "",
+    "project_website": "https://hedron.pro/",
+    "github": "https://github.com/PLSFusion/Hedron",
+    "twitter": "https://twitter.com/HedronCrypto",
+    "networks": ["Ethereum", "Pulsechain"]
+  },
+  {
+    "project": "Icosa",
+    "description": "Icosa builds upon the Hedron protocol to add HDRN staking and additional incentives for staking HEX",
+    "primary_category": "DeFi",
+    "secondary_categories": ["PRC20", "Yeild"],
+    "logo": "/logos/icosa.png",
+    "value_prop": "",
+    "project_website": "https://icosa.pro/",
+    "github": "https://github.com/PLSFusion/Icosa",
+    "twitter": "https://twitter.com/IcosaCrypto",
+    "networks": ["Ethereum", "Pulsechain"]
+  },
+  {
+    "project": "Party",
+    "description": "Maximus is a smart contract for trustless pooling of a max length HEX stake.",
+    "primary_category": "DeFi",
+    "secondary_categories": ["Pool", "PRC20"],
+    "logo": "/logos/party.png",
+    "value_prop": "",
+    "project_website": "https://hexpool.party/",
+    "github": "",
+    "twitter": "https://twitter.com/maximus_dao",
+    "networks": ["Ethereum", "Pulsechain"]
+  }
+]

@@ -5,7 +5,7 @@ type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <footer className='py-6 border-t border-gray-300 text-white'>
+    <footer className='py-6 border-t border-gray-800 text-white'>
       <div className='container mx-auto flex flex-wrap py-10 items-center justify-between '>
         <div className='mb-6 w-full md:mb-0 md:w-1/4'>
           <ExtraHexLogo className='h-12 fill-white' />
